@@ -5,23 +5,29 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
-   title: 'Clima Pro – Installation et Entretien de Climatisation',
+   title: 'Julio Kuntuala – Développeur Backend Java | Portfolio',
    description:
-      'Clima Pro offre des services de climatisation de qualité : installation, maintenance et dépannage pour particuliers et professionnels.',
+      'Découvrez le portfolio de Julio Kuntuala, développeur backend Java. Projets Spring Boot, API REST, React et gestion de base de données.',
    keywords: [
-      'climatisation',
-      'Clima Pro',
-      'installation climatiseur',
-      'entretien',
-      'BKCNDynastie',
-      'services climatisation',
+      'développeur Java',
+      'Spring Boot',
+      'backend',
+      'API REST',
+      'React',
+      'portfolio développeur',
+      'Julio Kuntuala',
+      'TakeItFree',
+      'Java Junior',
+      'projets Java',
+      'MySQL',
+      'JUnit',
    ],
    openGraph: {
-      title: 'Clima Pro – Installation et Entretien de Climatisation',
+      title: 'Julio Kuntuala – Développeur Backend Java | Portfolio',
       description:
-         "Installation, dépannage et entretien de climatiseurs pour maisons et entreprises. Contactez Clima Pro dès aujourd'hui.",
-      url: 'https://clima-pro-bkcndynastie.vercel.app/',
-      siteName: 'Clima Pro',
+         'Portfolio de Julio Kuntuala : projets Java avec Spring Boot, gestion d’authentification, microservices, tests unitaires et frontend React.',
+      url: 'https://jkr-portfolio.vercel.app/',
+      siteName: 'Portfolio Julio Kuntuala',
       locale: 'fr_FR',
       type: 'website',
    },
