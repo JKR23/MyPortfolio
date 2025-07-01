@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '@/public/img/me1.jpg';
+import Logo from '@/public/img/me6.jpg';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
