@@ -47,7 +47,7 @@ export default function HomeSection() {
                      Voir mes projets
                   </a>
                   <a
-                     href="/cv.pdf"
+                     href="/Cv_RIcarka_Kuntuala.pdf"
                      download
                      className="border border-yellow-400 px-6 py-2 rounded hover:bg-yellow-400 hover:text-black transition"
                   >
