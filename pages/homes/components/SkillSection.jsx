@@ -1,5 +1,5 @@
-import { FaJava, FaDatabase, FaProjectDiagram, FaReact } from 'react-icons/fa';
-import { SiSpringboot, SiApachemaven, SiMysql } from 'react-icons/si';
+import { FaJava, FaDatabase, FaProjectDiagram, FaReact, FaCubes, FaVial } from 'react-icons/fa';
+import { SiSpringboot, SiApachemaven, SiMysql, SiTestinglibrary } from 'react-icons/si';
 
 export default function SkillSection() {
    return (
@@ -43,6 +43,21 @@ export default function SkillSection() {
                   icon: <FaReact size={40} className="text-cyan-500" />,
                   title: 'React (niveau basique)',
                   text: 'Création de composants simples, gestion des props, intégration avec des APIs REST.',
+               },
+               {
+                  icon: <FaCubes size={40} className="text-purple-500" />,
+                  title: 'Jakarta EE (JEE)',
+                  text: 'Notions sur les Servlets, JSP, JPA et le développement d’applications d’entreprise.',
+               },
+               {
+                  icon: <FaVial size={40} className="text-red-400" />,
+                  title: 'JUnit',
+                  text: 'Écriture de tests unitaires pour assurer la qualité du code et détecter les régressions.',
+               },
+               {
+                  icon: <SiTestinglibrary size={40} className="text-yellow-500" />,
+                  title: 'Mockito',
+                  text: 'Mocking de dépendances pour tester des composants isolés dans des applications Java.',
                },
             ].map((item, i) => (
                <div
