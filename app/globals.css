@@ -1,26 +1,122 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+   --hue-color: 165;
+   --first-color: hsl(var(--hue-color), 60%, 33%);
+   --first-color-second: hsl(var(--hue-color), 69%, 61%);
+   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+   --title-color: hsl(var(--hue-color), 8%, 15%);
+   --text-color: hsl(var(--hue-color), 8%, 45%);
+   --text-color-light: hsl(var(--hue-color), 8%, 65%);
+   --input-color: hsl(var(--hue-color), 70%, 96%);
+   --body-color: hsl(var(--hue-color), 60%, 99%);
+   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+   --grey2: #eee;
+   --grey: #fafafa;
+   --light: #fff;
+   --dark: #000;
+   --couleur1: hsl(295, 60%, 33%);
+   --couleur2: hsl(165, 60%, 33%);
+   --couleur3: hsl(235, 60%, 33%);
+   --couleur4: hsl(205, 60%, 33%);
+
+   /* Les differentes tailles pour les petits ecrans */
+   --big-font-size: 2rem;
+   --h1-font-size: 1.5rem;
+   --h2-font-size: 1.25rem;
+   --h3-font-size: 1.125rem;
+   --normal-font-size: 0.98rem;
+   --small-font-size: 0.813rem;
+   --smaller-font-size: 0.6rem;
+   --interligne: 1.7;
+
+   /************ Font weight ***************/
+   --font-bold: 800;
+   --font-medium-bold: 600;
+   --font-semi-bold: 400;
+
+   /************ Largeur du slidebar *************/
+   --slidebar-width: 300px;
+
+   /**************  Lageur max pages************/
+   --page-max-width: 1024px;
+
+   /************ hauteur du navBar *************/
+   --navbar-height: 4rem;
+
+   /******** Les differentes marges ***************/
+   --mb-0-25: 0.25rem;
+   --mb-0-5: 0.5rem;
+   --mb-0-75: 0.75rem;
+   --mb-1: 1rem;
+   --mb-1-5: 1.5rem;
+   --mb-2: 2rem;
+   --mb-2-5: 2.5rem;
+   --mb-3: 3rem;
+
+   /****** z index  *****/
+   --z-tooltip: 10;
+   --z-fixed: 1000;
+   --z-back: 0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/****** Les tailles pour les grands ecrans *************/
+@media screen and (min-width: 968px) {
+   :root {
+      --big-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1.1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body.dark {
+   --light: #0c0c1e;
+   --grey: #060714;
+   --dark: #fbfbfb;
+   --first-color: #0c0c1e;
+}
+
+.shadow-top-left-hover:hover {
+   box-shadow: -8px -8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@font-face {
+   font-family: 'Amasis MT Pro';
+   src: url('/fonts/AmasisMTProLight/AmasisMTProLight.woff2') format('woff2'),
+      url('/fonts/AmasisMTProLight/AmasisMTProLight.woff') format('woff');
+   font-weight: 300; /* léger */
+   font-style: normal;
+   font-display: swap;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Amasis MT Pro', sans-serif;
 }
+
+/** {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+li {
+ list-style: none;
+}
+
+html {
+ overflow-x: hidden;
+}
+
+body {
+ background: var(--light);
+}*/
