@@ -67,6 +67,17 @@ export default function ProjetsSection() {
                les articles dont ils ne veulent plus. Tout le monde peut consulter les articles
                disponibles à donner, voir dans quelle ville ils se trouvent, ainsi que la distance
                (en mètres) à partir de sa propre position.
+               <br />
+               <br />
+               🔗 Vous pouvez tester la version en ligne ici :{' '}
+               <Link
+                  href="https://take-it-free-item-management-fronte.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-600 underline font-semibold hover:text-yellow-800"
+               >
+                  take-it-free-item-management-fronte.vercel.app
+               </Link>
             </p>
          </div>
 
